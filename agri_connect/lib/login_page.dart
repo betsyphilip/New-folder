@@ -1,3 +1,4 @@
+import 'package:agri_connect/RoleSelection.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -78,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
             GestureDetector(
               onTap: () {
                 // Navigate to sign-up page
-                Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUpPage()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => RoleSelectionPage()));
               },
               child: Text(
                 "New User? Sign Up",
